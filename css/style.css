@@ -1,0 +1,113 @@
+.game {
+  width: 320px;
+  height: 568px;
+  margin: 0 auto;
+  background: url("../images/开始背景.png");
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.gameStart {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  -webkit-user-select: none;
+  border: 3px solid gray;
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+.gameStart:hover {
+  background: gray;
+  color: white;
+}
+.gameMain {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: url("../images/background_1.png");
+  background-size: 100%;
+  position: relative;
+}
+.gameMain .myPlan {
+  position: absolute;
+  width: 80px;
+  height: 112px;
+  cursor: pointer;
+}
+.gameMain .bao {
+  border: 2px solid white;
+  border-radius: 50%;
+  border-bottom: none;
+  box-shadow: inset white 0 0 20px;
+}
+.gameMain .bullets, .gameMain .enemys, .gameMain .gameover  {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.gameMain .gameover {
+  display: none;
+  background: #00000060;
+  position: relative;
+}
+.gameover .defenban {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: #d7ddde;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid gray;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.defenban .title {
+  font-weight: bold;
+}
+.defenban .title, .defenban .restart {
+  flex: 1;
+  border-bottom: 1px solid black;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.defenban .restart {
+  border: none;
+  cursor: pointer;
+}
+.defenban .overscore {
+  flex: 3;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.gameMain .bullets .bullet {
+  position: absolute;
+}
+.gameMain .enemys .enemy {
+  position: absolute;
+}
+.gameMain .scoreBan {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.game .props {
+  position: absolute;
+}
