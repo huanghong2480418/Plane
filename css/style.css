@@ -34,6 +34,7 @@
   background: url("../images/background_1.png");
   background-size: 100%;
   position: relative;
+  overflow: hidden;
 }
 .gameMain .myPlan {
   position: absolute;
